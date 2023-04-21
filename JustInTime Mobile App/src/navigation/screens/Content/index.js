@@ -1,11 +1,11 @@
 import { View, Text, ScrollView } from 'react-native';
 import 'intl';
-import { Linking } from 'react-native';
+import { Linking, RefreshControl } from 'react-native';
 import Hyperlink from 'react-native-hyperlink';
 import BackButton from '../../../components/BackButton';
 
 import EmbeddedLink from '../../../components/EmbeddedLink';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 const parseDateTime = (datetime) => {
     const date = new Date(
@@ -40,9 +40,20 @@ const parseVideoLinks = (content) => {
     return embeddedVideoLinks
 }
 
+const wait = (timeout) => {
+    return new Promise((resolve) => setTimeout(resolve, timeout));
+};
+
 const ContentScreen = ({ route, navigation }) => {
     const { title, content, datetime } = route.params;
     const embeddedVideoLinks = parseVideoLinks(content)
+    const [refreshing, setRefreshing] = useState(false);
+
+
+    const onRefresh = useCallback(() => {
+        setRefreshing(true);
+        wait(1500).then(() => setRefreshing(false));
+    });
 
     return (
         <View style={[{ paddingTop: 56 }, { paddingBottom: 8 }]}>
@@ -54,6 +65,12 @@ const ContentScreen = ({ route, navigation }) => {
                 }}
                 contentContainerStyle={{ paddingBottom: 50 }}
                 alwaysBounceVertical={false}
+                refreshControl={
+                    <RefreshControl
+                        refreshing={refreshing}
+                        onRefresh={onRefresh}
+                    />
+                }
             >
                 <Text
                     style={{
@@ -84,7 +101,7 @@ const ContentScreen = ({ route, navigation }) => {
                         {content}
                     </Text>
                 </Hyperlink>
-                {embeddedVideoLinks ? embeddedVideoLinks.map((videoLink) => <EmbeddedLink videoLink={videoLink} key={videoLink}/>) : ""}
+                {embeddedVideoLinks ? embeddedVideoLinks.map((videoLink) => <EmbeddedLink videoLink={videoLink} refreshing={refreshing} key={videoLink}/>) : ""}
             </ScrollView>
         </View>
     );
