@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "JustInTime",
+    "owner": "zizzer0",
     "slug": "JustInTime",
     "version": "1.0.0",
     "orientation": "portrait",
