@@ -12,13 +12,11 @@ export default function EmbeddedLink(props) {
 
     useEffect(()=>{
         if(props.refreshing){
-            console.log("REFRESH")
             setRefreshHTML(!refreshHTML)
         }
     }, [props.refreshing])
     
     return (
-        <View>
             <WebView
                 javaScriptEnabled={true}
                 domStorageEnabled={true}
@@ -30,8 +28,6 @@ export default function EmbeddedLink(props) {
                     html: `<iframe width="100%" refreshHTML=${refreshHTML} height="100%" opacity="0.99" target="_self" src=${props.videoLink} title="Panopto video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
                 }}
             />
-      </View>
-
     );
 }
 
