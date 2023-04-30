@@ -11,7 +11,7 @@ Link to Firebase database console: https://console.firebase.google.com/
 Adminstrators can login to the website through the link above using any web browser and add, change, and remove posts. Administrator accounts need to be given access through the Firebase console and request can be accessed by emailing anhhuynh@live.unc.edu or abyerle@gmail.com.<br>
 The mobile app is currently not deployed and needs to be deployed to the app store or some other platform to download. In the meantime, the app can be run by pulling the repository and then run through the Expo Go app. Instructions on how to setup Expo Go can be found <a href='https://docs.expo.dev/get-started/installation/'>here</a> by first following the "Installation" guide and then "Create your first app". After creating an Expo Go account, email abyerle@gmail.com to add your account to the account owner's <a href='https://expo.dev/accounts/zizzer0/settings/members'>expo account members.</a> This will grant permissions for running the mobile app. In the future consider creating an organization to further customize account permissions<br>
 
-A video detailing how to set up and run the application can also be found <a href='https://youtu.be/4ELwhdD0wQE'>here</a>.
+An old video detailing how to set up and run the application can also be found <a href='https://youtu.be/4ELwhdD0wQE'>here</a>. Here is a newer video example <a href='https://www.youtube.com/watch?v=aMU1VXcq7aU'>running the app on a physical IOS device</a> using the Expo Go app.
 
 # App Details
 ![image](https://user-images.githubusercontent.com/49326544/206061285-b4039af6-e609-4ae0-8c45-5b4f669a4804.png)
