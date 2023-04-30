@@ -44,7 +44,7 @@ We do not expect any copyright, intellectual property, or HIPAA conflicts since 
 
 ## Embedded Videos
 
-The client chose panopto as the desired platform for sharing videos. Panopto is used widely by UNC faculty and hosts videos for free. Panopto video links that are sent from the admin portal are parsed by the mobile app using the React Native Webview library to embed panopto video links.
+The client chose panopto as the desired platform for sharing videos. Panopto is used widely by UNC faculty and hosts videos for free. Panopto video links that are sent from the admin portal are parsed by the mobile app using the React Native Webview library to create embedded videos visible from the mobile app. This way, the user does not need to be redirected to the browser to watch a video.
 
 
 # Web app Authentication
