@@ -52,6 +52,7 @@ For now, everyone can sign up to the system and view the web portal. However, on
 
 # Future work
 What's left to do? This app is relatively close to deployment - with another semester, it is very likely that this can become a fully functional and hosted application. 
+* Because user authentication is not set up, notification preferences selected within the mobile app are not saved or persisted. This needs to be added when a user's profile is created.
 * Admin portal polishing. There needs to be added an option to store credentials into localStorage and provide the option to sign out, in addition to better validation and checks for security. The author tag should also update accordingly, with a username field added to the database admins
 * Firebase analytics. The mobile app can be configured with Firebase analytics to get data on page views and app interaction. This can be a great way to understand how the app is being used.
 * Creating developer Apple/Google accounts. A paid subscription will be needed to host the app and let nurses download it.
