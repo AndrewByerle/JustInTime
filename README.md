@@ -26,7 +26,9 @@ To continue technical work on the project, you will need a web browser and a Sim
 In the mobile app directory, run the command `npm start` to run the application with Expo Go. From the mobile app, a QR code can be scanned with a phone or opened with a simulator app, after which development can continue. 
 
 # Setting Up Notifications
-Mobile app push notifications are only compatible with Android applications because the client still needs to buy an apple developer account. After purchasing this subscription, IOS notifications can be added and the app can be be deployed to the app store. The Firebase Cloud Messaging library enables sending notifications from the admin portal to the mobile app.
+Mobile app push notifications are only compatible with Android applications because the client still needs to buy an apple developer account. After purchasing this subscription, IOS notifications can be added and the app can be be deployed to the app store. The Firebase Cloud Messaging library enables sending notifications from the admin portal to the mobile app. Notifications can only be run from outside of the Expo Go app. This process can be completed by <a href='https://docs.expo.dev/develop/development-builds/create-a-build/?redirected'>creating an Expo development build</a>.
+
+
 # Web app details
 ![image](https://user-images.githubusercontent.com/49326544/206061845-110a6056-7c63-4fa6-b922-253fd7eb5a19.png)
 ![image](https://user-images.githubusercontent.com/49326544/206061918-45e402e0-0ffe-429f-8811-585a26857aac.png)
