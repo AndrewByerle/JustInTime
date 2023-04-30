@@ -40,9 +40,12 @@ The web app is done in pure React.js and can be deployed from a local terminal. 
 # App Hosting
 If you want to deploy the app onto an App store, you will need to run a build process as described <a href="https://docs.expo.dev/archive/classic-updates/building-standalone-apps/">here</a>, which should automatically generate the ios and android directories. These can then be loaded with XCode or Android Studio to run and deploy them into apps that can then be hosted on the respective app stores. To do this, you will need to set up an iOS developer account and a Google developer account and go through an app verification process. 
 
-Additionally, if you want to host videos within the app itself, you may need to purchase a different tier of cloud storage for video and resource hosting.
-
 We do not expect any copyright, intellectual property, or HIPAA conflicts since the client mentioned that all data is publicly available and not linked to any patients.
+
+## Embedded Videos
+
+The client chose panopto as the desired platform for sharing videos. Panopto is used widely by UNC faculty and hosts videos for free. Panopto video links that are sent from the admin portal are parsed by the mobile app using the React Native Webview library to embed panopto video links.
+
 
 # Web app Authentication
 For now, everyone can sign up to the system and view the web portal. However, only certain authorized users will be able to make changes and edits. To start the process, first let the user sign up to the web admin. Then, as an administrator, log into the Firebase Console. On the left side panel you will see a "authentication" tab. Switch to the authentication tab, and a list of all authenticated users will be available. Every account comes with an indentifier (the email), and an UID. If you want to give edit access to a specific account, copy the account's UID. Then go to the 'realtime database' tab, and just create a new entry {UID: true} under the "admins" subtree. Just replace UID with the one you copied. Afterwards, the user who was granted access can log in as normally, but now can make changes to the database. If you need more control over the access of the database, go to the 'rules' tab on the realtime database. But this would need further understanding of Firebase's documentation.
