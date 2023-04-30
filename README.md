@@ -8,8 +8,8 @@ Link to admin: https://just-in-time-5698c.web.app <br>
 Link to Firebase database console: https://console.firebase.google.com/
 
 # Download and Usage
-Adminstrators can login to the website through the link above using any web browser and add, change, and remove posts. Administrator accounts need to be given access through the Firebase console and request can be accessed by emailing anhhuynh@live.unc.edu .<br>
-The mobile app is currently not deployed and needs to be deployed to the app store or some other platform to download. In the meantime, the app can be run by pulling the repository and then run through the Expo Go app. Instructions on how to setup Expo Go can be found <a href='https://docs.expo.dev/get-started/installation/'>here</a> by first following the "Installation" guide and then "Create your first app". <br>
+Adminstrators can login to the website through the link above using any web browser and add, change, and remove posts. Administrator accounts need to be given access through the Firebase console and request can be accessed by emailing anhhuynh@live.unc.edu or abyerle@gmail.com.<br>
+The mobile app is currently not deployed and needs to be deployed to the app store or some other platform to download. In the meantime, the app can be run by pulling the repository and then run through the Expo Go app. Instructions on how to setup Expo Go can be found <a href='https://docs.expo.dev/get-started/installation/'>here</a> by first following the "Installation" guide and then "Create your first app". After creating an Expo Go account, email abyerle@gmail.com to add your account to the account owner's <a href='https://expo.dev/accounts/zizzer0/settings/members'>expo account members.</a> This will grant permissions for running the mobile app.<br>
 
 A video detailing how to set up and run the application can also be found <a href='https://youtu.be/4ELwhdD0wQE'>here</a>.
 
@@ -41,11 +41,9 @@ For now, everyone can sign up to the system and view the web portal. However, on
 
 # Future work
 What's left to do? This app is relatively close to deployment - with another semester, it is very likely that this can become a fully functional and hosted application. 
-* Notifications. Currently, our app does not have the ability to send push notifications. The next step regarding this involves configuring Firebase to send push notifications and have it be a programmatic option through the admin portal, to select whether a notification should be sent or not. Then, the mobile app needs to be configured to receive and update accordingly. To test this requires building the app and testing it outside of Expo Go, which we were unable to get to in Fall '22.
 * Admin portal polishing. There needs to be added an option to store credentials into localStorage and provide the option to sign out, in addition to better validation and checks for security. The author tag should also update accordingly, with a username field added to the database admins
-* Hosting resources. The app and backend can be configured to host resources such as PDFs or videos, potentially relying on FireStore for blob storage.
 * Firebase analytics. The mobile app can be configured with Firebase analytics to get data on page views and app interaction. This can be a great way to understand how the app is being used.
-* Creating developer Apple/Google accounts. This will be needed to host the app and let nurses download it.
+* Creating developer Apple/Google accounts. A paid subscription will be needed to host the app and let nurses download it.
 * A more thorough testing suite. Currently, there are Jest tests that can be run with `npm test -- --watchAll` in the mobile app directory. However, navigation and interaction were harder to capture and test programatically, and will need more time to test and debug.
 
 # Contact
