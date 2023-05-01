@@ -41,7 +41,7 @@ After toggling selected notification preferences from within the mobile app, nav
 ![image](https://user-images.githubusercontent.com/49326544/206061845-110a6056-7c63-4fa6-b922-253fd7eb5a19.png)
 ![image](https://user-images.githubusercontent.com/49326544/206061918-45e402e0-0ffe-429f-8811-585a26857aac.png)
 
-The web app is done in pure React.js and can be deployed from a local terminal. To do so, you need to have Firebase tools installed with `npm install -g firebase-tools`, `npm run build` to create a build directory, `firebase login` with your Firebase credentials, and lastly `firebase deploy`.
+The web app is done in pure React.js and can be deployed from a local terminal. To do so, you need to have Firebase tools installed with `npm install -g firebase-tools`, `npm run build` to create a build directory, `firebase login` with your Firebase credentials, `npm run build && npm run export` and lastly `firebase deploy`. <a href='https://www.youtube.com/watch?v=piGza_X9Gj4&t=255s'> Example of how to deploy Next.js to firebase hosting </a>.
 
 # App Hosting
 If you want to deploy the app onto an App store, you will need to run a build process as described <a href="https://docs.expo.dev/archive/classic-updates/building-standalone-apps/">here</a>, which should automatically generate the ios and android directories. These can then be loaded with XCode or Android Studio to run and deploy them into apps that can then be hosted on the respective app stores. To do this, you will need to set up an iOS developer account and a Google developer account and go through an app verification process. 
