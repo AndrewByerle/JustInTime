@@ -36,6 +36,8 @@ After installing the development build, uncomment all lines in `/JustInTime Mobi
 
 After toggling selected notification preferences from within the mobile app, navigate away from the mobile app so that it is in the background before sending a notification message from the admin portal.
 
+Here's a demo of the push notifications in action: https://youtu.be/L6MCmkCnrYc
+
 
 # Web app details
 ![image](https://user-images.githubusercontent.com/49326544/206061845-110a6056-7c63-4fa6-b922-253fd7eb5a19.png)
