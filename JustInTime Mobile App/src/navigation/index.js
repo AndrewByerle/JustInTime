@@ -4,7 +4,6 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import SettingsScreen from './screens/Settings';
 import HomeStack from './stacks/HomeStack';
-import UpdatesStack from './stacks/UpdatesStack';
 import ResourceStack from './stacks/ResourceStack';
 import { View } from 'react-native';
 import { DataProvider } from '../components/DataContext';
@@ -64,7 +63,6 @@ const MainContainer = () => {
                         })}
                     >
                         <Tab.Screen name={'Home'} component={HomeStack} />
-                        {/* <Tab.Screen name={'Updates'} component={UpdatesStack} /> */}
                         <Tab.Screen
                             name={'Resources'}
                             component={ResourceStack}
