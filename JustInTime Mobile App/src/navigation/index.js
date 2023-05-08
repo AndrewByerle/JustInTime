@@ -1,7 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
 import SettingsScreen from './screens/Settings';
 import HomeStack from './stacks/HomeStack';
 import ResourceStack from './stacks/ResourceStack';
